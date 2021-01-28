@@ -1,0 +1,45 @@
+$lh: 1.65;
+$main: "Montserrat", sans-serif;
+$tc: #000;
+$acc: #fff;
+
+/* -------------------------------Vars-------------------------------------------- */
+
+body {
+  min-width: 320px;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  line-height: $lh;
+  color: $tc;
+  overflow-x: hidden;
+  position: relative;
+  font-family: $main;
+}
+
+a {
+  color: $tc;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

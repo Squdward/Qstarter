@@ -1,0 +1,60 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format('woff2');
+  }
+}
+
+@function vw($px, $width: 1960px) {
+
+  @return ($px * 100vw) / $width;
+}
+
+@function rem($px, $fz: 16px) {
+
+  @return $px / $fz + rem;
+}
+
+$xl: 1599.98px;
+$lg: 1199.98px;
+$md: 991.98px;
+$sm: 767.98px;
+$xs: 575.98px;
+
+@mixin media-xl {
+
+  @media (max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+
+  @media (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin media-md {
+
+  @media (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin media-xs {
+
+  @media (max-width: $xs) {
+    @content;
+  }
+}
